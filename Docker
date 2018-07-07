@@ -1,0 +1,13 @@
+Download VirtualBox
+brew install docker-compose. Which install docker and docker-machine
+install VirtualBox
+
+docker-machine create --driver virtualbox [name of the vm]
+docker-machine ls
+docker-machine env [name of the vm]
+eval $(docker-machine env default)   --> sets the env to the docker machine running in the vm
+
+docker pull ubuntu  =--> pulls the ubuntu image (testing that docker machine is working)
+
+docker-machine ip default --> prints the ip of the VM named default
+docker-machine ssh default --> ssh into the vm named default
